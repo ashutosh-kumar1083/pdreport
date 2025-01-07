@@ -5,11 +5,16 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+from dotenv import load_dotenv
+
 
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets'] 
 
-SPREADSHEETID = '1bkTINLcAD8e1qgtz_bibdPqt93i9KaW2OcotAOIFKxE'
+#SPREADSHEETID = '1bkTINLcAD8e1qgtz_bibdPqt93i9KaW2OcotAOIFKxE'
+
+load_dotenv()
+SPREADSHEETID = os.getenv('SPREADSHEETID')
 
 
 def main():
