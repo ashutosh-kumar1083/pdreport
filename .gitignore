@@ -1,2 +1,6 @@
 # Ignore environment variables file
 .env
+
+# Ignore token and credentials files
+token.json
+pdalertclient.json
