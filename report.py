@@ -11,7 +11,6 @@ from dotenv import load_dotenv
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets'] 
 
-#SPREADSHEETID = '1bkTINLcAD8e1qgtz_bibdPqt93i9KaW2OcotAOIFKxE'
 
 load_dotenv()
 SPREADSHEETID = os.getenv('SPREADSHEETID')
@@ -44,4 +43,6 @@ def main():
         print(error)
 
 if __name__ == '__main__':
+
+    print("Making changes to the code to check git branching")
     main()
